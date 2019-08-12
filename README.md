@@ -3,9 +3,8 @@
 
 Import
 --------
-
-```xml
 Maven :
+```xml
 <dependency>
 	    <groupId>com.github.MateuszWolkowicz</groupId>
 	    <artifactId>androidExtensions</artifactId>
