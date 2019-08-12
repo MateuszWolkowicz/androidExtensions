@@ -9,7 +9,7 @@ Maven :
 	    <groupId>com.github.MateuszWolkowicz</groupId>
 	    <artifactId>androidExtensions</artifactId>
 	    <version>0.1.0</version>
-	</dependency>
+</dependency>
 ```
 or Gradle:
 ```groovy
