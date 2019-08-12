@@ -28,13 +28,22 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.2'
+
+    // Reactive extensions
+    implementation "io.reactivex.rxjava2:rxjava:$rx_java"
+    implementation "io.reactivex.rxjava2:rxandroid:$rx_java_android"
+
+    // KTX
+    implementation "androidx.core:core-ktx:$android_core_ktx"
+    implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycle_reactivestreams_ktx"
+    implementation "androidx.collection:collection-ktx:$collection_ktx"
+    implementation "androidx.fragment:fragment-ktx:$fragment_ktx"
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    compile "androidx.core:core-ktx:+"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 repositories {
     mavenCentral()
